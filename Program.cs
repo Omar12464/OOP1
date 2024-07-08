@@ -41,6 +41,14 @@ namespace OOP1
             #endregion
 
             #region Part2
+            Employee[] employee=new Employee[4];
+            employee[0] = new Employee(1, "Alice", 8, 75000.50, new DateTime(2020, 1, 1), "F") { Privilege = Employee.privileges.DBA };
+            employee[1] = new Employee(2, "Bob", 1, 50000.00, new DateTime(2021, 2, 1), "M") { Privilege = Employee.privileges.guest };
+            employee[2] = new Employee(3, "Charlie", 15, 90000.00, new DateTime(2019, 3, 1), "M") { Privilege = Employee.privileges.Developer };
+            employee[3] = new Employee(4, "Modi", 16, 100000.00, new DateTime(2020, 4, 6), "M") { Privilege = Employee.privileges.secretary };
+            foreach (Employee emp in employee) {
+                Console.WriteLine(emp.ToString());
+            }
 
 
 
